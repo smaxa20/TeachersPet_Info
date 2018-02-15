@@ -1,0 +1,189 @@
+body {
+    background: rgb(231, 231, 231)
+}
+
+h1 {
+    text-align: center; 
+    color: forestgreen; 
+    font-size: 75
+}
+
+.Columns h2 {
+    text-align: center;
+    color: darkblue
+}
+
+p.intro {
+    text-align: left; 
+    margin: 0px 50px 50px 100px
+}
+
+.active {
+    background-color: darkblue; 
+    color: white
+}
+
+ul {
+    list-style: none; 
+    text-align: left; 
+    margin-left: 60px
+}
+
+ul.menu {
+    list-style: none; 
+    margin-left: 30px; 
+    padding: 0; 
+    overflow: hidden
+}
+
+ul p {
+    text-align: left; 
+    margin: 0px 50px; 
+}
+
+ul h3 {
+    text-align: left; 
+    color: forestgreen
+}
+
+li.menu {
+    float: left
+}
+
+li a {
+    display: block; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+    color: darkblue
+}
+
+.People {
+    text-align: center
+}
+
+.Person {
+    display: inline-block;   
+    padding: 0px 125px;
+    vertical-align: top
+}
+
+.Person2 {
+    display: inline-block;   
+    padding: 0px 125px;
+    vertical-align: top
+}
+
+.People h2 {
+    color: darkblue
+}
+
+.People p {
+    text-align: left;
+    width: 300px
+}
+
+.Person img {
+    width: 300px;
+    height: 200px
+}
+
+.Person2 img {
+    width: 200px;
+    height: 200px
+}
+
+.Columns {
+    width: 100%
+}
+
+.RightColumn {
+    display: inline-block;
+    vertical-align: top;
+    width: 38%
+}
+
+.RightColumn img {
+    padding-bottom: 50px;
+    padding-left: 50px;
+    width: 300px;
+    height: 500px
+}
+
+.LeftColumn {
+    display: inline-block;
+    vertical-align: top;
+    width: 60%
+}
+
+* {box-sizing: border-box}
+.slides {
+    display: none
+}
+
+.slideshow {
+    max-width: 30%;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow img {
+    vertical-align: middle;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    color: forestgreen;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(47, 67, 180);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot active, .dot:hover {
+    background-color: darkblue;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
