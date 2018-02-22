@@ -5,6 +5,6 @@
     $review = $_POST["review"];
 
     fopen("feedback.txt", "a+");
-    fwrite("feedback.txt", $name + " " + $email + " " + $rating + " " + $review);
+    echo fwrite("feedback.txt", $name + " " + $email + " " + $rating + " " + $review);
     fclose("feedback.txt");
 ?>
