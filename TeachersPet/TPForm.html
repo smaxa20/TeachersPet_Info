@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Teacher's Pet</title>
+    <link rel="stylesheet" type="text/css" href="TPStyle.css">
+</head>
+<body>
+    <h1>
+        Teacher's Pet
+    </h1>
+
+    <ul class="menu">
+        <li class="menu"><a href="../TPHome.html">Home</a></li>
+        <li class="menu"><a href="TPDetails.html">Details</a></li>
+        <li class="menu"><a href="TPContactUs.html">About Us</a></li>  
+        <li class="menu"><a href="TPSlideshow.html">Screenshots</a></li>
+        <li class="menu"><a class="active" href="TPForm.html">Review</a></li>             
+    </ul>    
+
+    <hr style="margin-bottom: 100px" />
+
+    <form action="TPForm.html" method="POST">
+        <h3>Name</h3>
+        <input type="text" name="name" placeholder="Enter your name">
+        <h3>Email</h3>
+        <input type="text" name="email" placeholder="Enter your email">
+        <h3>What would you rate this app, 5 being the best</h3>
+        <select name="rating">
+            <option name="zero">0</option>
+            <option name="one">1</option>
+            <option name="two">2</option>
+            <option name="three">3</option>
+            <option name="four">4</option>
+            <option name="five">5</option>
+        </select>
+        <h3>Review</h3>
+        <textarea rows="10" cols="30" name="review"></textarea>
+    </form>
+</body>
+</html>
