@@ -4,7 +4,7 @@
     $rating = $_POST["rating"];
     $review = $_POST["review"];
 
-    fopen("feedback.txt", "a+");
-    echo fwrite("feedback.txt", $name);// + " " + $email + " " + $rating + " " + $review);
-    fclose("feedback.txt");
+    $file = fopen("feedback.txt", "a+");
+    echo fwrite($file, $name);// + " " + $email + " " + $rating + " " + $review);
+    fclose($file);
 ?>
