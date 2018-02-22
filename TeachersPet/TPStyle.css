@@ -187,3 +187,7 @@ li a {
     from {opacity: .4} 
     to {opacity: 1}
 }
+
+h3 {
+    color: darkblue
+}
